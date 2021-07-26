@@ -70,7 +70,14 @@
     height: 30%;
     width: 100%;
   }
-  
+
+  .dateAndTime {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -27px;
+    padding: 1px;
+  }
+
   .arrow {
     display: flex;
     justify-content: flex-end;
@@ -87,6 +94,7 @@
     width: fit-content;
     background-color: #fafaf5ab;
     margin: 2px;
+    z-index: 2;
   }
   
   .cardBody {
@@ -97,6 +105,8 @@
 
   .listingImage {
     width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
   }
 
   h4 {
@@ -128,12 +138,12 @@
     height: 1.3em;
   }
 
-  .listingDetails{
+  /* .listingDetails{
     display: flex;
     justify-content: space-between;
     position: relative;
     top: 18px;
-  }
+  } */
 
   .listingTitle {
     text-align: center;
