@@ -68,6 +68,8 @@
 
   .cardHeader {
     background-color: white;
+    height: 30%;
+    width: 100%;
   }
   
   .listingDetails {
