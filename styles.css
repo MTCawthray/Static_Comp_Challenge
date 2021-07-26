@@ -138,13 +138,6 @@
     height: 1.3em;
   }
 
-  /* .listingDetails{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 18px;
-  } */
-
   .listingTitle {
     text-align: center;
     font-size: 2.5vh;
@@ -156,7 +149,7 @@
     margin: 1em;
     padding: .5em;
     border-radius: 3px;
-    
+    height: 7vh;
   }
 
   .bottomOfCard {
