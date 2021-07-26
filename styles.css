@@ -67,9 +67,14 @@
   }
 
   .cardHeader {
-    background-color: white;
     height: 30%;
     width: 100%;
+  }
+  
+  .arrow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   
   .listingDetails {
@@ -118,9 +123,9 @@
 
   .dateIcon {
     z-index: 2;
-    margin-right: 35%;
-    width: 1em;
-    height: 1em;
+    margin-right: .7em;
+    width: auto;
+    height: 1.3em;
   }
 
   .listingDetails{
