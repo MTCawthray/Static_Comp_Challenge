@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
     background-color: background: rgb(16,74,80);
-    background: linear-gradient(35deg, rgba(16,74,80,1) 24%, rgba(30,105,113,1) 52%);
+    background: linear-gradient( 35deg, rgb(15 183 200 / 86%) 24%, rgb(45 146 157 / 82%) 52%);
   }
 
   ul {
@@ -70,6 +70,17 @@
     background-color: white;
   }
   
+  .listingDetails {
+    display: flex;
+    align-items: right;
+    border: .5px solid grey;
+    border-radius: 15px;
+    padding: 3px;
+    font-size: .75em;
+    width: fit-content;
+    background-color: #fafaf5ab;
+    margin: 2px;
+  }
   
   .cardBody {
     background-color: #c7c7c354;
@@ -93,12 +104,6 @@
   }
   
   .viewListingIcon {
-    /* z-index: 2;
-    position: relative;
-    right: -140px;
-    top: 50px;
-    width: 3em;
-    height: auto; */
     margin-top: -100%;
     margin-left: 140px;
     z-index: 2;
@@ -119,6 +124,14 @@
   .listingDetails{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: 18px;
+  }
+
+  .listingTitle {
+    text-align: center;
+    font-size: 2.5vh;
+    margin-top: 1vh;
   }
 
   .shortDescription {
@@ -133,7 +146,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2vh 0 2vh 0;
+    margin: 0 0 2vh 0;
   }
 
   .price,
@@ -146,9 +159,20 @@
   /* FOR tablet DISPLAY */
 @media screen and (min-width: 480px) {
 /* full screen */
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav {
+  width: 100%;
+}
+
 .DMGSLogo {
-  width: 55%;
   margin: -4vh 0 0 0;
+  width: 30%;
+  margin: 2vh -3vw 1vh -27%;
 }
 
 .cardContainer {
@@ -167,8 +191,9 @@ article {
 @media screen and (min-width: 800px) {
 
   header {
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   nav {
@@ -180,8 +205,8 @@ article {
   }
 
   .DMGSLogo {
-    width: 40%;
-    margin: 0;
+    width: 30%;
+    margin: 2vh -3vw 1vh -27%;
   }
 
   .cardContainer {
