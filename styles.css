@@ -17,10 +17,10 @@
     background-color: #1e656da1;
   }
 
-  ul,
-  nav {
+  ul {
     display: flex;
-  
+    justify-content: space-around;
+    margin: 2vh 0 1.2vh 0;
   }
 
   .DMGSLogo {
@@ -32,13 +32,21 @@
     visibility: hidden;
   }
 
+  h2 {
+    font-size: medium;
+    align-items: center;
+  }
+
+  h2 > img {
+    margin-bottom: -6px;
+  }
   /* main section */
 
   main {
     background-color: #fafaf5;
   }
 
-  h2 {
+  h3 {
     text-align: left;
     text-decoration-color: grey;
   }
@@ -56,8 +64,9 @@
   }
 
   .cardHeader {
-
+    background-color: white;
   }
+  
   
   .cardBody {
     background-color: #c7c7c354;
@@ -73,14 +82,35 @@
     font-size: 3vh;
   }
   
+  .addListingLogo,
+  .faqLogo,
+  .loginLogo {
+    height: 1.5em;
+    width: auto;
+  }
   
   .viewListingIcon {
+    /* z-index: 2;
+    position: relative;
+    right: -140px;
+    top: 50px;
+    width: 3em;
+    height: auto; */
+    margin-top: -100%;
+    margin-left: 140px;
     z-index: 2;
-  }
+    position: static;
+    width: 3em;
+    height: auto;
+    color:teal
+}
+  
 
   .dateIcon {
     z-index: 2;
     margin-right: 35%;
+    width: 1em;
+    height: 1em;
   }
 
   .listingDetails{
