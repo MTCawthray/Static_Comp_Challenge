@@ -198,6 +198,14 @@ article {
   width: 42%;
 }
 
+.shortDescription {
+  height: 10vh;
+}
+
+.shortDescription > p {
+  text-overflow: ellipsis;
+
+}
 }
 
 @media screen and (min-width: 800px) {
